@@ -34,7 +34,7 @@ async function run (){
         })
 
 
-        //create notes taker
+        //create notes taker    
         app.post('/note', async(req,res) =>{
             const data =req.body;
             const result = await userCollection.insertOne(data)
